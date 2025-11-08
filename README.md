@@ -5,9 +5,9 @@ Active ragdoll (puppet) type VR hands in Unreal Engine 5.4 using experimental Ph
 This is a demo project I put together to see how active ragdoll (puppet) hands would feel in VR. 
 Unreal Engine 5's Physics Control component makes puppets fairly simple to create, though there is a lot of fine tuning to do for a convincing effect. Scene contains a bunch of example physics-based interactables including a pettable cat - it is also a puppet, alas, not carryable.
 
-[Grab the dev build (Windows)](https://github.com/szanuj/VRPuppetHands/releases/latest) or inspect project in Unreal (instructions below).
+[Grab the build (Windows)](https://github.com/szanuj/VRPuppetHands/releases/latest) or inspect project in Unreal (instructions below).
 
-Supports hand tracking on Quest 2 (you have to enable Developer Runtime Features in Meta Quest Link app) and finger curls on Valve Index controllers. There is no gesture detection (editor started crashing on startup whenever I added it) so for grabbing and teleport/snap turn you're gonna need to use controllers.
+Supports hand tracking on Quest (you have to enable Developer Runtime Features in Meta Quest Link app) and finger curls on Valve Index controllers. Hand tracking mode will activate automatically when you put away controllers. There is no gesture detection (editor started crashing on startup whenever I added it) so grip and teleport/snap work only on controllers.
 
 Also works without VR, in FPS mode (thanks to VREP Example Template). LMB for grabbing, 1-4 keys for different right hand finger curls.
 
