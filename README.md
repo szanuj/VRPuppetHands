@@ -7,7 +7,9 @@ Unreal Engine 5's Physics Control component makes puppets fairly simple to creat
 
 [Grab the build (Windows)](https://github.com/szanuj/VRPuppetHands/releases/latest) or inspect project in Unreal (instructions below).
 
-Supports hand tracking on Quest (you have to enable Developer Runtime Features in Meta Quest Link app) and finger curls on Valve Index controllers. Hand tracking mode will activate automatically when you put away controllers. There is no gesture detection (editor started crashing on startup whenever I added it) so grip and teleport/snap work only on controllers.
+Supports hand tracking through OpenXR\*. Hand tracking mode will activate automatically when you put away controllers. There is no gesture detection (editor started crashing on startup whenever I added it) so grip and teleport/snap work only on controllers.
+
+\* Hand tracking through Meta Quest Link no longer works after recent updates from Meta. In late 2024 it worked after you enabled Developer Runtime Features in desktop app. You can try your luck with Steam Link, Virtual Desktop or ALVR, but I haven't tested that. Finger curls on Valve Index controllers should just work.
 
 Also works without VR, in FPS mode (thanks to VREP Example Template). LMB for grabbing, 1-4 keys for different right hand finger curls.
 
@@ -17,7 +19,8 @@ Also works without VR, in FPS mode (thanks to VREP Example Template). LMB for gr
 
 ## Project setup
 
-- Download [VR Expansion Plugin Example Template](https://github.com/mordentral/VRExpPluginExample) for UE 5.4 and follow setup instructions
+- Make sure you're using UE 5.4
+- Download [VR Expansion Plugin Example Template (branch 5.4)](https://github.com/mordentral/VRExpPluginExample/tree/5.4-Locked) and follow setup instructions
 - Close Unreal, drop contents of this repo into your project folder, choose "Replace all"
 
 ## Notes
